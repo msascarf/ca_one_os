@@ -235,7 +235,7 @@ consoleintr(int (*getc)(void))
       break;
       case C('C'):  // cntrl + c
         i = 0;
-        str[i] = input.buf[(input.e) % INPUT_BUF];
+        //str[i] = input.buf[(input.e) % INPUT_BUF];
         while(input.e != input.w &&
             input.buf[(input.e-1) % INPUT_BUF] != '\n'){
           i ++;
